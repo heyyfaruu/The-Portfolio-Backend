@@ -35,11 +35,11 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOrigins(
-                List.of(
-    "http://localhost:5173",
-    "https://your-vercel-url.vercel.app"
-)
-        );
+        List.of(
+                "http://localhost:5173",
+                "https://the-portfolio-frontend.vercel.app"
+        )
+);
 
         configuration.setAllowedMethods(
                 List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")
