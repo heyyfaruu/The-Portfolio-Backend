@@ -9,7 +9,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/feedback")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(
+    origins = {
+        "http://localhost:5173",
+        "https://the-portfolio-frontend.vercel.app"
+    }
+)
 public class FeedbackController {
 
     private final FeedbackRepository feedbackRepository;
